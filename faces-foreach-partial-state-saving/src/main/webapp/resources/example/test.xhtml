@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:composite="http://java.sun.com/jsf/composite">
+<body>
+
+<composite:interface componentType="example.Test">
+	<composite:attribute name="var"		type="java.lang.String"		required="true" />
+	<composite:attribute name="value"	type="java.io.Serializable"	required="true" />
+</composite:interface>
+
+<composite:implementation>
+	<composite:insertChildren />
+</composite:implementation>
+
+</body>
+</html>
